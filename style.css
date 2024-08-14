@@ -1,0 +1,107 @@
+/* Default values for all tags */
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  box-sizing: border-box;
+  font-family: cursive;
+  margin: 15% 5%;
+  padding: 0;
+}
+
+/* styling to it to the center */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/* styling onm the main container */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-content: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+/* making all card type to column card */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  min-height: 400px;
+}
+
+/* changing back-ground color of all card  */
+.orange-card {
+  background-color: hsl(31, 77%, 52%);
+  padding: 3rem;
+}
+.cyan-card {
+  background-color: hsl(184, 100%, 22%);
+  padding: 3rem;
+}
+.green-card {
+  background-color: hsl(179, 100%, 13%);
+  padding: 3rem;
+}
+
+/* styling on the head-line of the card */
+.card h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+/* styling on the paragraph tag of the card */
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2rem;
+}
+
+/* default style for the all anchor tag for the color, back-ground color or the border of the card */
+.card a {
+  text-decoration: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+/* changing text color of the anchor tag */
+.orange-card a {
+  color: hsl(31, 77%, 52%);
+}
+.cyan-card a {
+  color: hsl(184, 100%, 22%);
+}
+.green-card a {
+  color: hsl(179, 100%, 13%);
+}
+
+/* style for when user hover on the link tab*/
+.card a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+a:hover {
+  transition: 0.3s ease;
+}
+
+/* media is used to make it relaible for the mobile user after width became less than 1070px */
+@media screen and (max-width: 1070px) {
+  .main {
+    width: 100vw;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
